@@ -40,7 +40,7 @@ public class Mass {
         System.out.println();
     }
 
-    public void start(){
+    public void start() {
         massSort(massCreation());
     }
 }

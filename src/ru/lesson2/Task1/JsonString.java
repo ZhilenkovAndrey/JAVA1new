@@ -18,23 +18,23 @@ public class JsonString {
         return params;
     }
 
-    public void printJsonString(Map<String, String> params){
+    public void printJsonString(Map<String, String> params) {
         System.out.println("JSON: ");
-        for (Map.Entry<String, String> item : params.entrySet()){
+        for (Map.Entry<String, String> item : params.entrySet()) {
             System.out.printf(" %s  %s \n", item.getKey(), item.getValue());
         }
     }
 
-    public StringBuilder makeStringBuilder(Map<String, String> params){
+    public StringBuilder makeStringBuilder(Map<String, String> params) {
         sb = new StringBuilder();
 
-        for(Map.Entry<String, String> p : params.entrySet()){
+        for (Map.Entry<String, String> p : params.entrySet()) {
             if (p.getValue() != null) sb.append(p.getKey() + " = " + p.getValue() + "; ");
         }
         return sb;
     }
 
-    public void printStringBuilder(StringBuilder sb){
+    public void printStringBuilder(StringBuilder sb) {
         System.out.println("StrinBuilder: ");
         System.out.println(sb.toString());
     }

@@ -1,11 +1,11 @@
 package src.ru.lesson4.Task1;
 
 import java.util.Collections;
-import java.util.List;
+import java.util.LinkedList;
 
 public class ListTuneOver {
-    public List<Integer> listTuneOver(List<Integer> a) {
+    public LinkedList<Integer> listTuneOver(LinkedList<Integer> a) {
         Collections.reverse(a);
-        return a;
+        return new LinkedList<>(a);
     }
 }
